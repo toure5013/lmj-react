@@ -16,10 +16,6 @@ function Cart({ cart, updateCart }) {
   }, [total])
 
 
-  useEffect(() => {
-     localStorage.setItem('cart', JSON.stringify(cart)) 
-  }, [cart])
-
 	return isOpen ? (
 		<div className='lmj-cart'>
 			<Button
